@@ -1,0 +1,55 @@
+{
+  "name": "n8n-nodes-chatwoot",
+  "version": "1.0.0",
+  "description": "n8n community node for Chatwoot - customer engagement platform",
+  "keywords": [
+    "n8n-community-node-package",
+    "chatwoot",
+    "customer-support",
+    "helpdesk",
+    "chat"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/your-org/n8n-nodes-chatwoot",
+  "author": {
+    "name": "Your Name",
+    "email": "you@example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/n8n-nodes-chatwoot.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ChatwootApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Chatwoot/Chatwoot.node.js",
+      "dist/nodes/Chatwoot/ChatwootTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "^1.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

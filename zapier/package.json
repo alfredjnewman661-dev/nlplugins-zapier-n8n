@@ -1,0 +1,31 @@
+{
+  "name": "chatwoot-zapier",
+  "version": "1.0.0",
+  "description": "Zapier integration for Chatwoot - customer engagement platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --testTimeout 10000",
+    "lint": "eslint src --ext .js",
+    "validate": "zapier validate",
+    "build": "zapier build",
+    "push": "zapier push",
+    "deploy": "zapier push"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=6.14.0"
+  },
+  "dependencies": {
+    "zapier-platform-core": "^15.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "nock": "^13.0.0"
+  },
+  "zapier": {
+    "id": "chatwoot",
+    "title": "Chatwoot",
+    "version": "1.0.0"
+  }
+}
