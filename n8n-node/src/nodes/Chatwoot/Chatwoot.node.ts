@@ -661,8 +661,9 @@ export class Chatwoot implements INodeType {
 					}
 				}
 
+				const jsonData = Array.isArray(responseData) ? responseData : [responseData];
 				const executionData = this.helpers.constructExecutionMetaData(
-					this.helpers.returnJsonArray(responseData as Record<string, unknown>),
+					this.helpers.returnJsonArray(jsonData),
 					{ itemData: { item: i } }
 				);
 				returnData.push(...executionData);
