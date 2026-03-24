@@ -1,3 +1,9 @@
+> **💰 [$19 — Buy Now](https://nlplugins.lemonsqueezy.com/checkout/buy/b1800f27-e5ff-4df2-a401-8159ac0177a9)** | **[Learn More](https://nlplugins.com/plugins/zapier-n8n-integration.html)** | **[All NL Plugins](https://nlplugins.com)**
+> 
+> One-time purchase · Source code included · 14-day money-back guarantee · [Terms](https://nlplugins.com/terms.html)
+
+---
+
 # Chatwoot Integrations: Zapier & n8n
 
 This repository contains automation integrations for [Chatwoot](https://www.chatwoot.com), enabling seamless workflow automation with two popular platforms:
